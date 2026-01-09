@@ -220,9 +220,9 @@ fi
 # Check only if mode is delete.
 MY_HETZNER_SERVER_ID=${INPUT_SERVER_ID}
 
-# Set the server type/instance type (default: cx22)
-# If INPUT_SERVER_TYPE is set, use its value; otherwise, use "cx22".
-MY_SERVER_TYPE=${INPUT_SERVER_TYPE:-"cx22"}
+# Set the server type/instance type (default: cx23)
+# If INPUT_SERVER_TYPE is set, use its value; otherwise, use "cx23".
+MY_SERVER_TYPE=${INPUT_SERVER_TYPE:-"cx23"}
 
 # Set maximal retries * WAIT_SEC (10 sec) for Hetzner Cloud Server (default: 30 [5 min])
 # If INPUT_SERVER_WAIT is set, use its value; otherwise, use "30".

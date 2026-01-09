@@ -119,7 +119,7 @@ inputs:
     description: >-
       Name of the Server type this Server should be created with.
     required: false
-    default: 'cx22'
+    default: 'cx23'
   server_wait:
     description: >-
       Wait up to 'server_wait' retries (10 sec each) for the Hetzner Cloud Server to start (default: 30 = 5 min).
