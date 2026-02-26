@@ -517,6 +517,11 @@ if [[ "$MY_HETZNER_SERVER_STATUS" != "running" ]]; then
 	exit_with_failure "Failed to start Hetzner Cloud Server! Please check manually."
 fi
 
+if [[ "$INPUT_RUNNER_START_METHOD" == "systemd-stopped" ]]; then
+	echo "Run method is 'systemd-stopped'. Won't wait for GitHub Actions Runner registration."
+  exit 0
+fi
+
 # Wait for GitHub Actions Runner registration
 MAX_RETRIES=$MY_RUNNER_WAIT
 RETRY_COUNT=0
