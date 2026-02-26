@@ -519,7 +519,8 @@ fi
 
 if [[ "$INPUT_RUNNER_START_METHOD" == "systemd-stopped" ]]; then
 	echo "Run method is 'systemd-stopped'. Won't wait for GitHub Actions Runner registration."
-  exit 0
+	echo "The Hetzner Cloud Server #${MY_HETZNER_SERVER_ID} is ready for use 🚀" >> "$GITHUB_STEP_SUMMARY"
+	exit 0
 fi
 
 # Wait for GitHub Actions Runner registration
